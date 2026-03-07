@@ -1,0 +1,94 @@
+html {
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+body {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.progress-container {
+    /* display: none; */
+    z-index: 5;
+    color: #fff;
+    font-family: Arial;
+    background: #141414;
+    border-radius: .5vh;
+    position: fixed;
+    bottom: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.progress-bar-container{
+    gap: .5vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: .5vh;
+    width: 25vh;
+    height: 1.5vh;
+    padding: .3vh .5vh;
+
+}
+.wrap {
+    position: relative;
+    width: 24.6vh;
+    /* height: vh; */
+    z-index: 99;
+    display: flex;
+    left: 0.12vh;
+    display: flex;
+    height: 50%;
+    align-items: center;
+    bottom: 0.05vh;
+}
+#progress-bar{
+    position: relative;
+    border-radius: .1vh;
+    height: 0.7vh;
+    width: 10%;
+    overflow: hidden;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+}
+
+.progress-bar svg {
+    position: absolute;
+    width: 24.6vh;
+    height: 0.75vh;
+    top: 0vh;
+    
+}
+
+.snow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    width: 1.5vh;
+    height: 1.5vh;
+    border-radius: .2vh;
+}
+.snow img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    animation: S 1s ease infinite alternate; 
+}
+@keyframes S {
+    100%{
+        transform: rotate(-360deg);
+    }
+}
